@@ -14,3 +14,8 @@ gulp.task('vendorCSS', function() {
 	.pipe(concat('vendor.css'))
     .pipe(gulp.dest('dist/css'))
 });
+
+gulp.task('copyIndexFile', function() {
+  gulp.src('src/index.html')
+      .pipe(gulp.dest('dist'))
+});
