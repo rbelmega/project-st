@@ -8,7 +8,9 @@ var jshint = require('gulp-jshint');
 /*task which is used to merge all JS files from different libs and frameworks
 to one file and move it to dist/js/vendor.js*/
 gulp.task('vendorJS', function() {
-  gulp.src('bower_components/**/*min.js')
+  gulp.src(['bower_components/jquery/**/*min.js',
+      'bower_components/bootstrap/**/*min.js',
+      'bower_components/angular/**/*min.js'])
 	.pipe(concat('vendor.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
