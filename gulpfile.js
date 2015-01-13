@@ -32,6 +32,12 @@ gulp.task('copyIndexFile', function() {
       .pipe(gulp.dest('dist'))
 });
 
+//task which is used to copy app.js file from src directory to dist directory
+gulp.task('copyAppFile', function () {
+    gulp.src('src/app.js')
+        .pipe(gulp.dest('dist'))
+});
+
 /*task which is used to convert custom styles from src/customStyles.scss
 to CSS file and move it to dist/css/customStyles.css*/
 gulp.task('convertSass', function() {
@@ -47,7 +53,7 @@ gulp.task('clean', function () {
 });
 
 //task which is used to create dist folder
-gulp.task('build', ['clean', 'vendorJS', 'vendorCSS', 'convertSass', 'copyIndexFile']);
+gulp.task('build', ['clean', 'vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile']);
 
 //task which is used to validate custom JS files
 gulp.task('validateJS', function() {
