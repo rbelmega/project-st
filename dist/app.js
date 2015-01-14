@@ -7,16 +7,16 @@ myApp.config(['$routeProvider',
 	function($routeProvider){
 		$routeProvider.
 			when('/dashboard', {
-				template: '<h1>Dashboard</h1>'
+				templateUrl: 'views/dashboard.html'
 			}).
 			when('/matches', {
-				template: '<h1>Matches</h1>'
+				templateUrl: 'views/matches.html'
 			}).
 			when('/teams', {
-				template: '<h1>Teams</h1>'
+				templateUrl: 'views/teams.html'
 			}).
 			when('/championship', {
-				template: '<h1>Championship</h1>'
+				templateUrl: 'views/championship.html'
 			}).
 			otherwise({
 				redirectTo: '#'
