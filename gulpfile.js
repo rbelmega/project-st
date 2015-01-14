@@ -53,11 +53,17 @@ gulp.task('clean', function () {
         .pipe(clean());
 });
 
-//task which is used to create dist folder
-gulp.task('build', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile']);
-
 //task which is used to validate custom JS files
 gulp.task('validateJS', function() {
     gulp.src('src/**/*.js')
         .pipe(jshint());
 });
+
+//task which is used to move views folder from src to dist
+gulp.task('moveViews', function() {
+   gulp.src('src/views/*.html')
+       .pipe(gulp.dest('dist/views'));
+});
+
+//task which is used to create dist folder
+gulp.task('build', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews']);
