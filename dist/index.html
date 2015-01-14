@@ -4,9 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Structured Project</title>
 	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="css/customStyles.css">
+	<link rel="stylesheet" type="text/css" href="css/appCSS.css">
 </head>
 <body ng-app="myApp">
-	<script type="text/javascript" src="js/vendor.js"></script>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#dashboard">Dashboard</a></li>
+				<li><a href="#matches">Matches</a></li>
+				<li><a href="#teams">Teams</a></li>
+				<li><a href="#championship">Championship</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script type="text/javascript" src="js/vendor.js"></script>
 </body>
 </html>

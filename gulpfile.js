@@ -7,7 +7,8 @@ var jshint = require('gulp-jshint');
 
 var sourcesForVendorJS = ['bower_components/jquery/**/*min.js',
                           'bower_components/bootstrap/**/*min.js',
-                          'bower_components/angular/**/*min.js'];
+                          'bower_components/angular/**/*min.js',
+                          'bower_components/angular-route/**/*min.js'];
 
 /*task which is used to merge all JS files from different libs and frameworks
 to one file and move it to dist/js/vendor.js*/
@@ -38,10 +39,10 @@ gulp.task('copyAppFile', function () {
         .pipe(gulp.dest('dist'))
 });
 
-/*task which is used to convert custom styles from src/customStyles.scss
-to CSS file and move it to dist/css/customStyles.css*/
+/*task which is used to convert custom styles from src/appCSS.scss
+to CSS file and move it to dist/css/appCSS.css*/
 gulp.task('convertSass', function() {
-  gulp.src('src/customStyles.scss')
+  gulp.src('src/appCSS.scss')
       .pipe(sass())
       .pipe(gulp.dest('dist/css'))
 });
@@ -53,10 +54,10 @@ gulp.task('clean', function () {
 });
 
 //task which is used to create dist folder
-gulp.task('build', ['clean', 'vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile']);
+gulp.task('build', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile']);
 
 //task which is used to validate custom JS files
 gulp.task('validateJS', function() {
     gulp.src('src/**/*.js')
         .pipe(jshint());
-})
+});
