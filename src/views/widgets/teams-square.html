@@ -1,0 +1,7 @@
+<div class="team-square" ng-controller="TeamsCtrl">
+    <button ng-click="changeSortOrder()">Sort</button>
+    <div ng-repeat="team in teams>
+        <p>{{team.name}}</p>
+        <p>{{team.foundingDate | date: "MM/dd/yyyy"}}</p>
+    </div>
+</div>

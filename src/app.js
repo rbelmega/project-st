@@ -21,4 +21,16 @@ myApp.config(['$routeProvider',
 			otherwise({
 				redirectTo: '#'
 			});
-	}]);
+	}])
+	.controller("TeamsCtrl", ["$scope", function($scope) {
+		$scope.teams = [
+			{name: "Real Madrid", foundingDate: "1288323623006"},
+			{name: "Barcelona", foundingDate: "1288323623006"}
+		];
+	}])
+	.directive("teamsSquare", function() {
+		return {
+			restrict: "E",
+			templateUrl: "views/widgets/teams-square.html"
+		}
+	});
