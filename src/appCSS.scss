@@ -1,9 +1,22 @@
 $body-margin: 0px;
 $body-padding: 0px;
 $body-background-color: #ffffff;
+$team-square-margin: 20px;
+$team-square-padding: 10px;
+$team-square-width: 400px;
+$team-square-height: 400px;
+$team-square-border: 1px solid black;
 
 body{
 	margin: $body-margin;
 	padding: $body-padding;
 	background-color: $body-background-color;
+}
+
+.team-square{
+    margin: $team-square-margin;
+    padding: $team-square-padding;
+  	width: $team-square-width;
+  	height: $team-square-height;
+    border: $team-square-border;
 }

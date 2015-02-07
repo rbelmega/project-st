@@ -1,0 +1,15 @@
+<div class="team-square" ng-controller="TeamsCtrl">
+    <a ng-click="changeSortOrder()">
+        <span class="glyphicon" ng-class="{'glyphicon-arrow-up': predicate === '-name',
+            'glyphicon-arrow-down': predicate === 'name'}"></span>
+    </a>
+    <select ng-model="searchProperty">
+        <option value="$"></option>
+        <option value="name">NAME</option>
+        <option value="city">CITY</option>
+    </select>
+    <input type="text" ng-model="teamModel[searchProperty]">
+    <div ng-repeat="team in teams | orderBy: predicate | filter: teamModel[searchProperty]">
+        {{team.name}} - {{team.foundingDate | date: "MM/dd/yyyy"}}
+    </div>
+</div>

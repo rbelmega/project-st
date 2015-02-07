@@ -61,9 +61,15 @@ gulp.task('validateJS', function() {
 
 //task which is used to move views folder from src to dist
 gulp.task('moveViews', function() {
-   gulp.src('src/views/*.html')
+   gulp.src('src/views/**/*')
        .pipe(gulp.dest('dist/views'));
 });
 
+//task which is used to move fonts folder from bower_components to dist
+gulp.task('moveFonts', function() {
+   gulp.src('bower_components/bootstrap/fonts/**/*')
+       .pipe(gulp.dest('dist/fonts'));
+});
+
 //task which is used to create dist folder
-gulp.task('build', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews']);
+gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts']);
