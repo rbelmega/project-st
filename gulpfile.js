@@ -61,8 +61,8 @@ gulp.task('validateJS', function() {
 
 //task which is used to move views folder from src to dist
 gulp.task('moveViews', function() {
-   gulp.src('src/views/**/*')
-       .pipe(gulp.dest('dist/views'));
+   gulp.src('src/views/**/*.html')
+       .pipe(gulp.dest('dist/views/'));
 });
 
 //task which is used to move fonts folder from bower_components to dist
@@ -71,5 +71,13 @@ gulp.task('moveFonts', function() {
        .pipe(gulp.dest('dist/fonts'));
 });
 
+//task which is used to move and merge all js files from widgets to dist/widgets.js
+gulp.task('widgetsJS', function() {
+    gulp.src('src/views/widgets/**/*.js')
+        .pipe(concat('widgets.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist'))
+});
+
 //task which is used to create dist folder
-gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts']);
+gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'widgetsJS']);
