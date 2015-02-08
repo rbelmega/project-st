@@ -3,13 +3,13 @@
         <span class="glyphicon" ng-class="{'glyphicon-arrow-up': predicate === '-name',
             'glyphicon-arrow-down': predicate === 'name'}"></span>
     </a>
-    <select ng-model="searchProperty">
-        <option value="$"></option>
+    <select class="form-control custom-select custom-form-control" ng-model="searchProperty" ng-init="searchProperty='$'">
+        <option value="$">ALL</option>
         <option value="name">NAME</option>
         <option value="city">CITY</option>
     </select>
-    <input type="text" ng-model="teamModel[searchProperty]">
-    <div ng-repeat="team in teams | orderBy: predicate | filter: teamModel[searchProperty]">
-        {{team.name}} - {{team.foundingDate | date: "MM/dd/yyyy"}}
+    <input class="form-control custom-input custom-form-control" type="text" ng-model="teamModel[searchProperty]">
+    <div class="team-container" ng-repeat="team in europeanTeams[$index] | orderBy: predicate | filter: teamModel[searchProperty]">
+        <b>{{team.name}} - {{team.foundingDate | date: "MM/dd/yyyy"}}</b>
     </div>
 </div>
