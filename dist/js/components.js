@@ -1,0 +1,1 @@
+angular.module("app").directive("teamsSquare",function(){return{restrict:"E",templateUrl:"components/widgets/teams-square.html"}}),angular.module("app").controller("TeamsCtrl",["$scope",function(e){e.predicate="name",e.changeSortOrder=function(){e.predicate="name"===e.predicate?"-name":"name"}}]);
