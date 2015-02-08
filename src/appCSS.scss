@@ -1,51 +1,9 @@
 $body-margin: 0px;
 $body-padding: 0px;
 $body-background-color: #ffffff;
-$team-square-margin: 20px;
-$team-square-padding: 10px;
-$team-square-width: 400px;
-$team-square-height: 400px;
-$team-square-background: #f0f0f0;
-$team-square-border: 2px solid black;
-$team-square-border-radius: 4px;
-$select-width: 100px;
-$input-width: 250px;
-$team-container-padding: 4px;
-$team-container-margin: 4px;
-$team-container-background: #c0c0c0;
-$team-container-border-radius: 4px;
 
 body{
 	margin: $body-margin;
 	padding: $body-padding;
 	background-color: $body-background-color;
-}
-
-.team-square{
-    margin: $team-square-margin;
-    padding: $team-square-padding;
-  	width: $team-square-width;
-  	height: $team-square-height;
-    background-color: $team-square-background;
-    border: $team-square-border;
-    border-radius: $team-square-border-radius;
-
-    .custom-form-control {
-	  	display: inline;
-	}
-
-    .custom-select {
-	    width: $select-width;
-	}
-
-    .custom-input {
-	    width: $input-width;
-	}
-
-    .team-container {
-	    padding: $team-container-padding;
-	    margin: $team-container-margin;
-	    background-color: $team-container-background;
-	    border-radius: $team-container-border-radius;
-	}
 }
