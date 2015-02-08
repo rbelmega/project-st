@@ -71,13 +71,28 @@ gulp.task('moveFonts', function() {
        .pipe(gulp.dest('dist/fonts'));
 });
 
-//task which is used to move and merge all js files from widgets to dist/widgets.js
-gulp.task('widgetsJS', function() {
-    gulp.src('src/views/widgets/**/*.js')
-        .pipe(concat('widgets.js'))
+//task which is used to move and merge all js files from components to dist/js/components.js
+gulp.task('componentsJS', function() {
+    gulp.src('src/components/**/*.js')
+        .pipe(concat('components.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/js'))
+});
+
+/*task which is used to merge all CSS files from different components
+ to one file and move it to dist/css/components.css*/
+gulp.task('componentsCSS', function() {
+    gulp.src('src/components/**/*.scss')
+        .pipe(sass())
+        .pipe(concat('components.css'))
+        .pipe(gulp.dest('dist/css'))
+});
+
+//task which is used to move all html files from components to dist/components
+gulp.task('moveComponentsHTML', function() {
+    gulp.src('src/components/**/*.html')
+        .pipe(gulp.dest('dist/components/'));
 });
 
 //task which is used to create dist folder
-gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'widgetsJS']);
+gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'moveComponentsHTML']);
