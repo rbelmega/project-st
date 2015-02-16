@@ -1,8 +1,8 @@
 {
-  "name": "angular-route",
-  "version": "1.3.8",
-  "description": "AngularJS router module",
-  "main": "angular-route.js",
+  "name": "angular-animate",
+  "version": "1.3.13",
+  "description": "AngularJS module for animations",
+  "main": "angular-animate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,7 @@
     "angular",
     "framework",
     "browser",
-    "router",
+    "animation",
     "client-side"
   ],
   "author": "Angular Core Team <angular-core+npm@google.com>",

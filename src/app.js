@@ -1,40 +1,37 @@
 /**
  * Created by snykyf on 1/13/2015.
  */
-var myApp = angular.module('app', ["ngRoute"]);
+var myApp = angular.module('app', ["ui.router", "ngAnimate", "teamsModule", "viewsModule"]);
 
-myApp.config(['$routeProvider',
-	function($routeProvider){
-		$routeProvider.
-			when('/dashboard', {
-				templateUrl: 'views/dashboard.html'
+myApp.config(['$stateProvider', '$urlRouterProvider',
+	function($stateProvider, $urlRouterProvider){
+		$urlRouterProvider.otherwise('404');
+		$stateProvider.
+			state('dashboard', {
+				url: '/dashboard',
+				templateUrl: 'views/dashboard.html',
+				controller: 'dashboardPageCtrl'
 			}).
-			when('/matches', {
-				templateUrl: 'views/matches.html'
+			state('matches', {
+				url: '/matches',
+				templateUrl: 'views/matches.html',
+				controller: 'matchesPageCtrl'
 			}).
-			when('/teams', {
-				templateUrl: 'views/teams.html'
+			state('teams', {
+				url: '/teams',
+				templateUrl: 'views/teams.html',
+				controller: 'teamsPageCtrl'
 			}).
-			when('/championship', {
-				templateUrl: 'views/championship.html'
+			state('championship', {
+				url: '/championship',
+				templateUrl: 'views/championship.html',
+				controller: 'championshipPageCtrl'
 			}).
-			otherwise({
-				redirectTo: '#'
+			state('404', {
+				url: '/404',
+				templateUrl: 'views/404.html'
+			}).
+			state('default', {
+				url: ''
 			});
-	}])
-	.controller("EuropeanTeamsCtrl", ["$scope", function($scope) {
-		$scope.europeanTeams = [
-			[
-				{name: "Real", city: "Madrid", foundingDate: "1288323623006"},
-				{name: "Barcelona", city: "Barcelona", foundingDate: "1288323623006"},
-				{name: "Atletico", city: "Madrid", foundingDate: "1288323623006"},
-				{name: "Valencia", city: "Valencia", foundingDate: "1288323623006"}
-			],
-			[
-				{name: "Manchester United", city: "Manchester", foundingDate: "1288323623006"},
-				{name: "Manchester City", city: "Manchester", foundingDate: "1288323623006"},
-				{name: "Arsenal", city: "London", foundingDate: "1288323623006"},
-				{name: "Liverpool", city: "Liverpool", foundingDate: "1288323623006"}
-			]
-		];
 	}]);

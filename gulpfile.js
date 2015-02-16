@@ -8,7 +8,8 @@ var jshint = require('gulp-jshint');
 var sourcesForVendorJS = ['bower_components/jquery/**/*min.js',
                           'bower_components/bootstrap/**/*min.js',
                           'bower_components/angular/**/*min.js',
-                          'bower_components/angular-route/**/*min.js'];
+                          'bower_components/angular-ui-router/**/*min.js',
+                          'bower_components/ng-animate/**/*min.js'];
 
 /*task which is used to merge all JS files from different libs and frameworks
 to one file and move it to dist/js/vendor.js*/
@@ -22,7 +23,7 @@ gulp.task('vendorJS', function() {
 /*task which is used to merge all CSS files from different libs and frameworks
 to one file and move it to dist/css/vendor.css*/
 gulp.task('vendorCSS', function() {
-  gulp.src('bower_components/**/*min.css')
+  gulp.src(['bower_components/**/*min.css', 'bower_components/ng-animate/css/ng-animation.css'])
 	.pipe(concat('vendor.css'))
     .pipe(gulp.dest('dist/css'))
 });
@@ -73,8 +74,16 @@ gulp.task('moveFonts', function() {
 
 //task which is used to move and merge all js files from components to dist/js/components.js
 gulp.task('componentsJS', function() {
-    gulp.src('src/components/**/*.js')
+    gulp.src(['src/components/**/*module.js', 'src/components/**/*.js'])
         .pipe(concat('components.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'))
+});
+
+//task which is used to move and merge all js files from views to dist/js/views.js
+gulp.task('viewsJS', function() {
+    gulp.src(['src/views/**/*module.js', 'src/views/**/*.js'])
+        .pipe(concat('views.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
 });
@@ -94,5 +103,11 @@ gulp.task('moveComponentsHTML', function() {
         .pipe(gulp.dest('dist/components/'));
 });
 
+//task which is used to copy images directory src directory to dist directory
+gulp.task('copyImages', function() {
+    gulp.src('src/images/**/')
+        .pipe(gulp.dest('dist/images'))
+});
+
 //task which is used to create dist folder
-gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'moveComponentsHTML']);
+gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'moveComponentsHTML', 'viewsJS', 'copyImages']);

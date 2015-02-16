@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('teamsModule')
     .controller("TeamsCtrl", ["$scope", function($scope) {
         $scope.predicate = "name";
 
