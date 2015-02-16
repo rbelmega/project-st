@@ -2,8 +2,57 @@ $body-margin: 0px;
 $body-padding: 0px;
 $body-background-color: #ffffff;
 
-body{
-	margin: $body-margin;
-	padding: $body-padding;
-	background-color: $body-background-color;
+@mixin transition($time) {
+  -webkit-transition:all $time;
+  -moz-transition:all $time;
+  -o-transition:all $time;
+  transition:all $time;
+}
+
+@mixin scale3d($x, $y, $z) {
+  -webkit-transform:scale3d($x, $y, $z);
+  -moz-transform:scale3d($x, $y, $z);
+  -o-transform:scale3d($x, $y, $z);
+  transform:scale3d($x, $y, $z);
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform:translate3d($x, $y, $z);
+  -moz-transform:translate3d($x, $y, $z);
+  -o-transform:translate3d($x, $y, $z);
+  transform:translate3d($x, $y, $z);
+}
+
+body {
+  margin: $body-margin;
+  padding: $body-padding;
+  background-color: $body-background-color;
+}
+
+.page-not-found-image {
+  width: 100%;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  @include transition(1s);
+}
+
+[ui-view].ng-enter {
+  @include scale3d(0.5, 0.5, 0.5);
+  opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+  @include scale3d(1, 1, 1);
+  opacity: 1;
+}
+
+[ui-view].ng-leave {
+  @include translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+  @include translate3d(100px, 0, 0);
+  opacity: 0;
 }

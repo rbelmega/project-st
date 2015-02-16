@@ -1,4 +1,6 @@
-<h1>Teams</h1>
+<h1>{{teamsTitle}}</h1>
 <div ng-controller="EuropeanTeamsCtrl">
-    <teams-square ng-repeat="nationalTeams in europeanTeams"></teams-square>
+    <div ng-repeat="nationalTeams in europeanTeams">
+        <teams-square teams="nationalTeams"></teams-square>
+    </div>
 </div>
