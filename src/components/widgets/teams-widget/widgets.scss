@@ -11,6 +11,7 @@ $team-container-padding: 4px;
 $team-container-margin: 4px;
 $team-container-background: #c0c0c0;
 $team-container-border-radius: 4px;
+$teams-container-max-height: 350px;
 
 .team-square{
     margin: $team-square-margin;
@@ -38,5 +39,10 @@ $team-container-border-radius: 4px;
 	    margin: $team-container-margin;
 	    background-color: $team-container-background;
 	    border-radius: $team-container-border-radius;
+	}
+
+  	.teams-container {
+	  	max-height: $teams-container-max-height;
+	    overflow-y: auto;
 	}
 }

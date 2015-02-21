@@ -43,7 +43,7 @@ gulp.task('copyAppFile', function () {
 /*task which is used to convert custom styles from src/appCSS.scss
 to CSS file and move it to dist/css/appCSS.css*/
 gulp.task('convertSass', function() {
-  gulp.src('src/appCSS.scss')
+  gulp.src('src/app.scss')
       .pipe(sass())
       .pipe(gulp.dest('dist/css'))
 });
@@ -74,7 +74,9 @@ gulp.task('moveFonts', function() {
 
 //task which is used to move and merge all js files from components to dist/js/components.js
 gulp.task('componentsJS', function() {
-    gulp.src(['src/components/**/*module.js', 'src/components/**/*.js'])
+    gulp.src(['src/components/widgets/widgets.module.js',
+        'src/components/**/*module.js',
+        'src/components/**/*.js'])
         .pipe(concat('components.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
@@ -82,8 +84,16 @@ gulp.task('componentsJS', function() {
 
 //task which is used to move and merge all js files from views to dist/js/views.js
 gulp.task('viewsJS', function() {
-    gulp.src(['src/views/**/*module.js', 'src/views/**/*.js'])
+    gulp.src(['src/views-controllers/**/*module.js', 'src/views-controllers/**/*.js'])
         .pipe(concat('views.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'))
+});
+
+//task which is used to move and merge all js files from services to dist/js/services.js
+gulp.task('servicesJS', function() {
+    gulp.src(['src/services/**/*module.js', 'src/services/**/*.js'])
+        .pipe(concat('services.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
 });
@@ -110,4 +120,4 @@ gulp.task('copyImages', function() {
 });
 
 //task which is used to create dist folder
-gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'moveComponentsHTML', 'viewsJS', 'copyImages']);
+gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'moveComponentsHTML', 'viewsJS', 'servicesJS', 'copyImages']);

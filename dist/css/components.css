@@ -17,3 +17,6 @@
     margin: 4px;
     background-color: #c0c0c0;
     border-radius: 4px; }
+  .team-square .teams-container {
+    max-height: 350px;
+    overflow-y: auto; }

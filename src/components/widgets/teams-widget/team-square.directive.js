@@ -5,6 +5,6 @@ angular.module('teamsModule')
             scope: {
                 teams: '=teams'
             },
-            templateUrl: "components/widgets/teams-square.html"
+            templateUrl: "components/widgets/teams-widget/teams-square.html"
         }
     });
