@@ -1,1 +1,1 @@
-angular.module("widgetsModule", ["teamsModule", "championshipModule"]);
+angular.module("widgetsModule", ["teamsModule", "championshipModule", "matchesModule"]);

@@ -1,0 +1,45 @@
+$matches-container-padding-top: 20px;
+$matches-container-margin: 5px;
+$matches-container-background: #f0f0f0;
+$matches-container-width: 500px;
+$matches-container-border: 2px solid black;
+$matches-container-border-radius: 4px;
+$match-container-padding: 4px;
+$match-container-margin: 4px;
+$match-container-background: #c0c0c0;
+$match-container-border-radius: 4px;
+$match-team-container-width: 222px;
+
+.national-matches-container {
+  padding-top: $matches-container-padding-top;
+  margin: $matches-container-margin;
+  background: $matches-container-background;
+  width: $matches-container-width;
+  border: $matches-container-border;
+  border-radius: $matches-container-border-radius;
+
+  .match-container {
+    text-align: center;
+    padding: $match-container-padding;
+    margin: $match-container-margin;
+    background: $match-container-background;
+    border-radius: $match-container-border-radius;
+
+    .match-team-container {
+      width: $match-team-container-width;
+      display: inline-block;
+    }
+
+    .first-match-team {
+      text-align: end;
+    }
+
+    .second-match-team {
+      text-align: start;
+    }
+  }
+
+  h6 {
+    margin: 0px;
+  }
+}

@@ -12,6 +12,10 @@ $team-container-margin: 4px;
 $team-container-background: #c0c0c0;
 $team-container-border-radius: 4px;
 $teams-container-max-height: 350px;
+$team-emblem-width: 30px;
+$team-emblem-height: 30px;
+$team-emblem-border-radius: 2px;
+$team-emblem-right-margin: 4px;
 
 .team-square{
     margin: $team-square-margin;
@@ -34,15 +38,22 @@ $teams-container-max-height: 350px;
 	    width: $input-width;
 	}
 
-    .team-container {
-	    padding: $team-container-padding;
-	    margin: $team-container-margin;
-	    background-color: $team-container-background;
-	    border-radius: $team-container-border-radius;
-	}
-
-  	.teams-container {
+    .teams-container {
 	  	max-height: $teams-container-max-height;
 	    overflow-y: auto;
+
+	  .team-container {
+		padding: $team-container-padding;
+		margin: $team-container-margin;
+		background-color: $team-container-background;
+		border-radius: $team-container-border-radius;
+
+		.team-emblem {
+		  width: $team-emblem-width;
+		  height: $team-emblem-height;
+		  margin-right: $team-emblem-right-margin;
+		  border-radius: $team-emblem-border-radius;
+		}
+	  }
 	}
 }
