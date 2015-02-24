@@ -3,8 +3,8 @@ angular.module('teamsModule')
         return {
             restrict: "E",
             scope: {
-                teams: '=teams'
+                teams: "=teams"
             },
-            templateUrl: "components/widgets/teams-square.html"
+            templateUrl: "components/widgets/teams-widget/teams-square.html"
         }
     });

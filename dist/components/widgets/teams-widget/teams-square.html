@@ -9,7 +9,9 @@
         <option value="city">CITY</option>
     </select>
     <input class="form-control custom-input custom-form-control" type="text" ng-model="teamModel[searchProperty]">
-    <div class="team-container" ng-repeat="team in teams | orderBy: predicate | filter: teamModel[searchProperty]">
-        <b>{{team.name}} - {{team.foundingDate | date: "MM/dd/yyyy"}}</b>
+    <div class="teams-container">
+        <div class="team-container" ng-repeat="team in teams | orderBy: predicate | filter: teamModel[searchProperty]">
+            <img class="team-emblem" ng-src="{{team.imageUrl}}"><b>{{team.name}}</b>
+        </div>
     </div>
 </div>

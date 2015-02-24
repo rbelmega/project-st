@@ -1,7 +1,7 @@
 /**
  * Created by snykyf on 1/13/2015.
  */
-var myApp = angular.module('app', ["ui.router", "ngAnimate", "teamsModule", "viewsModule"]);
+var myApp = angular.module('app', ["ui.router", "ngAnimate", "widgetsModule", "viewsModule"]);
 
 myApp.config(['$stateProvider', '$urlRouterProvider',
 	function($stateProvider, $urlRouterProvider){
