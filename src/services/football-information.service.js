@@ -36,14 +36,14 @@ angular.module("servicesModule").
                 var championshipImages = [];
                 var championships = [];
                 matches.forEach(function(match) {
-                   if (championshipImages.indexOf(match.image) === -1) {
-                       championshipImages.push(match.image);
+                   if (championshipImages.indexOf(match.title) === -1) {
+                       championshipImages.push(match.title);
                        championships.push({image: match.image, title: match.title, matches: []});
                    }
                 });
                 matches.forEach(function(match) {
                     championships.forEach(function(championship) {
-                       if (match.image === championship.image) {
+                       if (match.title === championship.title) {
                            championship.matches.push(match);
                        }
                     });
@@ -51,9 +51,21 @@ angular.module("servicesModule").
                 return championships;
             }
 
+            function getMatchesByChampionship(distributedMatches, championshipTitle) {
+                var selectedChampionship = [];
+                for (var i = 0; i < distributedMatches.length; i++) {
+                    if (distributedMatches[i].title === championshipTitle) {
+                        selectedChampionship = distributedMatches[i];
+                        break;
+                    }
+                }
+                return selectedChampionship;
+            }
+
             return {
                 getItems: getItems,
                 distributeTeamsByCountries: distributeTeamsByCountries,
-                distributeMatchesByChampionships: distributeMatchesByChampionships
+                distributeMatchesByChampionships: distributeMatchesByChampionships,
+                getMatchesByChampionship: getMatchesByChampionship
             };
     }]);
