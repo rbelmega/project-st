@@ -2335,24 +2335,18 @@
       <change type="DELETED" beforePath="E:\AngularJStraining\project-st\node_modules\gulp-uglify\node_modules\gulp-util\node_modules\lodash.template\node_modules\lodash.values\README.md" afterPath="" />
       <change type="DELETED" beforePath="E:\AngularJStraining\project-st\node_modules\gulp-uglify\node_modules\gulp-util\node_modules\lodash.template\node_modules\lodash.values\index.js" afterPath="" />
       <change type="DELETED" beforePath="E:\AngularJStraining\project-st\node_modules\gulp-uglify\node_modules\gulp-util\node_modules\lodash.template\node_modules\lodash.values\package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views-controllers/championship-page.controller.js" afterPath="$PROJECT_DIR$/src/views-controllers/championship-page.controller.js" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\views\championship.html" afterPath="E:\AngularJStraining\project-st\dist\views\championship.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/championship.html" afterPath="$PROJECT_DIR$/src/views/championship.html" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\css\components.css" afterPath="E:\AngularJStraining\project-st\dist\css\components.css" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\js\components.js" afterPath="E:\AngularJStraining\project-st\dist\js\components.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/components.css" afterPath="$PROJECT_DIR$/dist/css/components.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/components.js" afterPath="$PROJECT_DIR$/dist/js/components.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js" afterPath="$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/dashboard.html" afterPath="$PROJECT_DIR$/dist/views/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/dashboard.html" afterPath="$PROJECT_DIR$/src/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/football-information.service.js" afterPath="$PROJECT_DIR$/src/services/football-information.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views-controllers/matches-page.controller.js" afterPath="$PROJECT_DIR$/src/views-controllers/matches-page.controller.js" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\views\matches.html" afterPath="E:\AngularJStraining\project-st\dist\views\matches.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/matches.html" afterPath="$PROJECT_DIR$/src/views/matches.html" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\js\services.js" afterPath="E:\AngularJStraining\project-st\dist\js\services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/widgets/teams-widget/team-square.directive.js" afterPath="$PROJECT_DIR$/src/components/widgets/teams-widget/team-square.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views-controllers/teams-page.controller.js" afterPath="$PROJECT_DIR$/src/views-controllers/teams-page.controller.js" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\components\widgets\teams-widget\teams-square.html" afterPath="E:\AngularJStraining\project-st\dist\components\widgets\teams-widget\teams-square.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/widgets/teams-widget/teams-square.html" afterPath="$PROJECT_DIR$/src/components/widgets/teams-widget/teams-square.html" />
-      <change type="MODIFICATION" beforePath="E:\AngularJStraining\project-st\dist\js\views.js" afterPath="E:\AngularJStraining\project-st\dist\js\views.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/widgets/widgets.module.js" afterPath="$PROJECT_DIR$/src/components/widgets/widgets.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/widgets/matches-widget/matches.html" afterPath="$PROJECT_DIR$/dist/components/widgets/matches-widget/matches.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html" afterPath="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss" afterPath="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/services.js" afterPath="$PROJECT_DIR$/dist/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views.js" afterPath="$PROJECT_DIR$/dist/js/views.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\AngularJStraining\project-st\src\components\widgets\teams-widget\widgets.scss" afterPath="$PROJECT_DIR$/src/components/widgets/teams-widget/teams.scss" />
     </list>
     <ignored path="project-st.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2376,21 +2370,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="teams-page.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views-controllers/teams-page.controller.js">
+      <file leaf-file-name="football-information.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/football-information.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-              <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="984" max-vertical-offset="1520">
+              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="championship-page.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views-controllers/championship-page.controller.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="44" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="900">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matches.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3793104" vertical-offset="0" max-vertical-offset="380">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -2400,57 +2404,57 @@
         <entry file="file://$PROJECT_DIR$/src/views-controllers/matches-page.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-              <caret line="2" column="65" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="65" />
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="championship.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/championship.html">
+      <file leaf-file-name="matches.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/matches.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6896552" vertical-offset="0" max-vertical-offset="140">
-              <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
+            <state vertical-scroll-proportion="-2.7586207" vertical-offset="0" max-vertical-offset="220">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="championship.directive.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championship.directive.js">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="380">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="championships.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championships.html">
+      <file leaf-file-name="urls.constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/urls.constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="220">
-              <caret line="0" column="35" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
+              <caret line="7" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="championships.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championships.scss">
+      <file leaf-file-name="matches.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6760563" vertical-offset="60" max-vertical-offset="760">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state vertical-scroll-proportion="-1.8518518" vertical-offset="300" max-vertical-offset="1140">
+              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teams.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/widgets/teams-widget/teams.scss">
+      <file leaf-file-name="dashboard-page.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="1280">
-              <caret line="6" column="32" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="480">
+              <caret line="16" column="125" selection-start-line="16" selection-start-column="125" selection-end-line="16" selection-end-column="125" />
               <folding />
             </state>
           </provider>
@@ -2464,8 +2468,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/views/widgets/widgets.module.js" />
-        <option value="$PROJECT_DIR$/src/views/widgets/teams-square.directive.js" />
         <option value="$PROJECT_DIR$/src/views/widgets/team-square.directive.js" />
         <option value="$PROJECT_DIR$/src/views/widgets/teams.controller.js" />
         <option value="$PROJECT_DIR$/src/views/widgets/european-teams.controller.js" />
@@ -2487,8 +2489,6 @@
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/services/servies.module.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/views/dashboard.html" />
-        <option value="$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js" />
         <option value="$PROJECT_DIR$/src/views/teams.html" />
         <option value="$PROJECT_DIR$/src/components/widgets/teams-square.html" />
         <option value="$PROJECT_DIR$/src/components/widgets/widgetsCSS.scss" />
@@ -2498,14 +2498,11 @@
         <option value="$PROJECT_DIR$/src/views-controllers/views.module.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/services/urls.constants.js" />
-        <option value="$PROJECT_DIR$/src/services/football-information.service.js" />
         <option value="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.module.js" />
         <option value="$PROJECT_DIR$/src/components/widgets/widgets.module.js" />
         <option value="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.directive.js" />
         <option value="$PROJECT_DIR$/src/views-controllers/matches-page.controller.js" />
         <option value="$PROJECT_DIR$/src/views/matches.html" />
-        <option value="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss" />
-        <option value="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html" />
         <option value="$PROJECT_DIR$/src/views-controllers/teams-page.controller.js" />
         <option value="$PROJECT_DIR$/src/components/widgets/teams-widget/team-square.directive.js" />
         <option value="$PROJECT_DIR$/src/components/widgets/teams-widget/teams-square.html" />
@@ -2515,6 +2512,13 @@
         <option value="$PROJECT_DIR$/src/components/widgets/championship-widget/championship.directive.js" />
         <option value="$PROJECT_DIR$/src/components/widgets/championship-widget/championships.html" />
         <option value="$PROJECT_DIR$/src/components/widgets/championship-widget/championships.scss" />
+        <option value="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html" />
+        <option value="$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss" />
+        <option value="$PROJECT_DIR$/src/components/widgets/dashboard-widget/dashboard.module.js" />
+        <option value="$PROJECT_DIR$/src/services/countries.constants.js" />
+        <option value="$PROJECT_DIR$/src/services/football-information.service.js" />
+        <option value="$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js" />
+        <option value="$PROJECT_DIR$/src/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -2741,6 +2745,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-st" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-st" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -2764,14 +2782,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -2779,6 +2793,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -2853,12 +2871,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2885,25 +2903,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/views/teams.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="540">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1160">
           <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2911,7 +2914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1500">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2933,7 +2935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1160">
           <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2941,7 +2942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1500">
           <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2963,7 +2963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="820">
           <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2971,7 +2970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1500">
           <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3000,7 +2998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="820">
           <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3008,7 +3005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1500">
           <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3030,7 +3026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="580">
           <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3059,14 +3054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.655172" vertical-offset="360" max-vertical-offset="1260">
           <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1010101" vertical-offset="0" max-vertical-offset="396">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -3088,15 +3075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="3" column="94" selection-start-line="3" selection-start-column="94" selection-end-line="3" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3104,15 +3082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3120,7 +3089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
           <caret line="0" column="88" selection-start-line="0" selection-start-column="88" selection-end-line="0" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3128,31 +3096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2580">
           <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2407408" vertical-offset="465" max-vertical-offset="1000">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="380">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/matches.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="380">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3160,7 +3103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3793104" vertical-offset="0" max-vertical-offset="180">
           <caret line="2" column="52" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3168,9 +3110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70844686" vertical-offset="0" max-vertical-offset="440">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <marker date="1424770078000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3178,22 +3117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24449877" vertical-offset="0" max-vertical-offset="409">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/urls.constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14669926" vertical-offset="0" max-vertical-offset="409">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/football-information.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1280">
-          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -3214,19 +3137,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views-controllers/matches-page.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="2" column="65" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championship.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
           <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3238,17 +3152,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championship.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/championship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6896552" vertical-offset="0" max-vertical-offset="140">
+        <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="140">
           <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
           <folding />
         </state>
@@ -3256,24 +3162,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/widgets/teams-widget/teams.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="1280">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1280">
           <caret line="6" column="32" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championships.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="220">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championships.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6760563" vertical-offset="60" max-vertical-offset="760">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="760">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championships.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="220">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/widgets/championship-widget/championship.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8518518" vertical-offset="300" max-vertical-offset="1140">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/urls.constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
+          <caret line="7" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/widgets/matches-widget/matches.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3793104" vertical-offset="0" max-vertical-offset="380">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views-controllers/matches-page.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/football-information.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="984" max-vertical-offset="1520">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/matches.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7586207" vertical-offset="0" max-vertical-offset="220">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views-controllers/dashboard-page.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="480">
+          <caret line="16" column="125" selection-start-line="16" selection-start-column="125" selection-end-line="16" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="380">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>

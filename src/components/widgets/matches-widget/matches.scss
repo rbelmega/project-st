@@ -9,6 +9,8 @@ $match-container-margin: 4px;
 $match-container-background: #c0c0c0;
 $match-container-border-radius: 4px;
 $match-team-container-width: 222px;
+$matches-image-width: 48px;
+$matches-image-height: 48px;
 
 .national-matches-container {
   padding-top: $matches-container-padding-top;
@@ -17,6 +19,11 @@ $match-team-container-width: 222px;
   width: $matches-container-width;
   border: $matches-container-border;
   border-radius: $matches-container-border-radius;
+
+  .matches-image {
+    width: $matches-image-width;
+    height: $matches-image-height;
+  }
 
   .match-container {
     text-align: center;
