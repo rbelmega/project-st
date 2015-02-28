@@ -8,10 +8,6 @@ angular.module("viewsModule")
             FootballInformationService.getItems(UrlsProvider.matches)
                 .then(function(matches) {
                     distributedMatches = FootballInformationService.distributeMatchesByChampionships(matches);
-                    for (var i = 0; i < distributedMatches.length; i++) {
-                        distributedMatches[i].imageUrl = "http://footballbet.com.ua/teams/country/" +
-                        distributedMatches[i].image;
-                    }
 
                     $scope.selectedChampionship =
                         FootballInformationService.getMatchesByChampionship(distributedMatches, "Єврокубки, Ліга Чемпіонів");

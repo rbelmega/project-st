@@ -29,6 +29,13 @@ angular.module("servicesModule").
                         }
                     });
                 });
+                for (var i = 0; i < championships.length; i++) {
+                    for (var j = 0; j < championships[i]["nationalTeams"].length; j++) {
+                        championships[i]["nationalTeams"][j].imageUrl =
+                            "http://footballbet.com.ua/teams/embl/" +
+                            championships[i]["nationalTeams"][j]["emblema"];
+                    }
+                }
                 return championships;
             }
 
@@ -48,6 +55,10 @@ angular.module("servicesModule").
                        }
                     });
                 });
+                for (var i = 0; i < championships.length; i++) {
+                    championships[i].imageUrl = "http://footballbet.com.ua/teams/country/" +
+                    championships[i].image;
+                }
                 return championships;
             }
 
@@ -62,10 +73,19 @@ angular.module("servicesModule").
                 return selectedChampionship;
             }
 
+            function precessChampionshipsData(championships) {
+                championships.forEach(function(championship) {
+                    championship.imageUrl = "http://footballbet.com.ua/table/embl/" +
+                    championship.image;
+                });
+                return championships;
+            }
+
             return {
                 getItems: getItems,
                 distributeTeamsByCountries: distributeTeamsByCountries,
                 distributeMatchesByChampionships: distributeMatchesByChampionships,
-                getMatchesByChampionship: getMatchesByChampionship
+                getMatchesByChampionship: getMatchesByChampionship,
+                precessChampionshipsData: precessChampionshipsData
             };
     }]);
