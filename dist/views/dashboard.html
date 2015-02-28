@@ -1,8 +1,0 @@
-<h1>{{dashboardTitle}}</h1>
-<select class="form-control championship-select"
-        ng-show="championships.length > 1"
-        ng-model="selectedChampionship"
-        ng-options="championship.title for championship in championships"></select>
-<last-matches title="selectedChampionship.title"
-              image-url="selectedChampionship.imageUrl"
-              matches="selectedChampionship.matches"></last-matches>
