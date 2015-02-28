@@ -20,6 +20,10 @@ $matches-image-height: 48px;
   border: $matches-container-border;
   border-radius: $matches-container-border-radius;
 
+  .matches-title {
+    display: inline;
+  }
+
   .matches-image {
     width: $matches-image-width;
     height: $matches-image-height;
