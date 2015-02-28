@@ -1,4 +1,4 @@
-angular.module("matchesModule")
+angular.module("matches")
     .directive("lastMatches", function() {
         return {
             restrict: "E",

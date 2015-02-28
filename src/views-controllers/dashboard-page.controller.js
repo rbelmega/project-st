@@ -1,15 +1,11 @@
-angular.module("viewsModule")
+angular.module("views")
     .controller("dashboardPageCtrl", ["$scope", "UrlsProvider", "FootballInformationService",
         function($scope, UrlsProvider, FootballInformationService) {
-            var distributedMatches = [];
-
             $scope.dashboardTitle = "Dashboard";
 
             FootballInformationService.getItems(UrlsProvider.matches)
                 .then(function(matches) {
-                    distributedMatches = FootballInformationService.distributeMatchesByChampionships(matches);
-
-                    $scope.selectedChampionship =
-                        FootballInformationService.getMatchesByChampionship(distributedMatches, "Єврокубки, Ліга Чемпіонів");
+                    $scope.championships = FootballInformationService.distributeMatchesByChampionships(matches);
+                    $scope.selectedChampionship = $scope.championships[0];
                 });
     }]);

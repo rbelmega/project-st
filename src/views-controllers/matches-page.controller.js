@@ -1,4 +1,4 @@
-angular.module("viewsModule")
+angular.module("views")
     .controller("matchesPageCtrl", ["$scope", "UrlsProvider", "FootballInformationService",
         function($scope, UrlsProvider, FootballInformationService) {
             $scope.matchesTitle = "Matches";

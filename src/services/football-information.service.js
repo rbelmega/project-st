@@ -1,4 +1,4 @@
-angular.module("servicesModule").
+angular.module("services").
     factory("FootballInformationService", ["$http", "$q",
         function($http, $q) {
             function getItems(url) {

@@ -1,1 +1,1 @@
-angular.module("viewsModule", ["servicesModule"]);
+angular.module("views", ["services"]);

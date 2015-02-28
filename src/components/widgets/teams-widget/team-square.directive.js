@@ -1,4 +1,4 @@
-angular.module('teamsModule')
+angular.module('teams')
     .directive("teamsSquare", function() {
         return {
             restrict: "E",
