@@ -24,7 +24,7 @@ angular.module("servicesModule").
                 });
                 teams.forEach(function(team) {
                     championships.forEach(function(championship) {
-                        if (team["id_championship"] === championship["id"]) {
+                        if (team["id_championship"] === championship["id"] && team["name"] !== "") {
                             championship["nationalTeams"].push(team);
                         }
                     });
