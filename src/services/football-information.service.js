@@ -62,17 +62,6 @@ angular.module("services").
                 return championships;
             }
 
-            function getMatchesByChampionship(distributedMatches, championshipTitle) {
-                var selectedChampionship = [];
-                for (var i = 0; i < distributedMatches.length; i++) {
-                    if (distributedMatches[i].title === championshipTitle) {
-                        selectedChampionship = distributedMatches[i];
-                        break;
-                    }
-                }
-                return selectedChampionship;
-            }
-
             function precessChampionshipsData(championships) {
                 championships.forEach(function(championship) {
                     championship.imageUrl = "http://footballbet.com.ua/table/embl/" +
@@ -85,7 +74,6 @@ angular.module("services").
                 getItems: getItems,
                 distributeTeamsByCountries: distributeTeamsByCountries,
                 distributeMatchesByChampionships: distributeMatchesByChampionships,
-                getMatchesByChampionship: getMatchesByChampionship,
                 precessChampionshipsData: precessChampionshipsData
             };
     }]);
