@@ -1,4 +1,4 @@
-angular.module("championshipModule")
+angular.module("championship")
     .directive("championshipsList", function() {
         return {
             restrict: "E",

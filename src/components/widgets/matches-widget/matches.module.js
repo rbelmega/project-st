@@ -1,1 +1,1 @@
-angular.module("matchesModule", []);
+angular.module("matches", []);

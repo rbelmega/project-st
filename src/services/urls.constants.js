@@ -1,4 +1,4 @@
-angular.module("servicesModule").
+angular.module("services").
     constant('UrlsProvider', {
         matches: "http://footballbet.com.ua/api/matches/",
         championships: "http://footballbet.com.ua/api/championships/",

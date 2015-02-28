@@ -1,11 +1,12 @@
 /**
  * Created by snykyf on 1/13/2015.
  */
-var myApp = angular.module('app', ["ui.router", "ngAnimate", "widgetsModule", "viewsModule"]);
+var myApp = angular.module('app', ["ui.router", "ngAnimate", "widgets", "views"]);
 
 myApp.config(['$stateProvider', '$urlRouterProvider',
 	function($stateProvider, $urlRouterProvider){
 		$urlRouterProvider.otherwise('404');
+		$urlRouterProvider.when('', '/dashboard');
 		$stateProvider.
 			state('dashboard', {
 				url: '/dashboard',
@@ -30,8 +31,5 @@ myApp.config(['$stateProvider', '$urlRouterProvider',
 			state('404', {
 				url: '/404',
 				templateUrl: 'views/404.html'
-			}).
-			state('default', {
-				url: ''
 			});
 	}]);

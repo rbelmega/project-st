@@ -107,6 +107,15 @@ gulp.task('componentsCSS', function() {
         .pipe(gulp.dest('dist/css'))
 });
 
+/*task which is used to merge all CSS files from different views
+ to one file and move it to dist/css/views.css*/
+gulp.task('viewsCSS', function() {
+    gulp.src('src/views-styles/**/*.scss')
+        .pipe(sass())
+        .pipe(concat('views.css'))
+        .pipe(gulp.dest('dist/css'))
+});
+
 //task which is used to move all html files from components to dist/components
 gulp.task('moveComponentsHTML', function() {
     gulp.src('src/components/**/*.html')
@@ -120,4 +129,4 @@ gulp.task('copyImages', function() {
 });
 
 //task which is used to create dist folder
-gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'moveComponentsHTML', 'viewsJS', 'servicesJS', 'copyImages']);
+gulp.task('default', ['vendorJS', 'vendorCSS', 'convertSass', 'copyAppFile', 'copyIndexFile', 'moveViews', 'moveFonts', 'componentsJS', 'componentsCSS', 'viewsCSS', 'moveComponentsHTML', 'viewsJS', 'servicesJS', 'copyImages']);

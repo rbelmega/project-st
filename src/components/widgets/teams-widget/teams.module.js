@@ -1,1 +1,1 @@
-angular.module("teamsModule", []);
+angular.module("teams", []);
