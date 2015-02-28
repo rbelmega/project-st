@@ -1,6 +1,8 @@
 <div class="national-matches-container">
-    <img class="matches-image" ng-src="{{imageUrl}}">
-    <h2 class="matches-title">{{title}}</h2>
+    <div>
+        <img class="matches-image" ng-src="{{imageUrl}}">
+        <h2 class="matches-title">{{title}}</h2>
+    </div>
     <div class="teams-container">
         <div class="match-container" ng-repeat="match in matches">
             <h6>{{match.date}}</h6>

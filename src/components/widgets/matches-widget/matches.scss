@@ -11,6 +11,7 @@ $match-container-border-radius: 4px;
 $match-team-container-width: 222px;
 $matches-image-width: 48px;
 $matches-image-height: 48px;
+$matches-title-font-size: 14px;
 
 .national-matches-container {
   padding-top: $matches-container-padding-top;
@@ -21,6 +22,7 @@ $matches-image-height: 48px;
   border-radius: $matches-container-border-radius;
 
   .matches-title {
+    font-size: $matches-title-font-size;
     display: inline;
   }
 
