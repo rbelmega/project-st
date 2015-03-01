@@ -70,10 +70,21 @@ angular.module("services").
                 return championships;
             }
 
+            function getTeamsByCountry(teams, selectedChampionship) {
+                for (var i = 0; i < teams.length; i++) {
+                    if (teams[i]["id_championship"] === selectedChampionship["id_championship"]) {
+                        var selectedTeams = teams[i]["nationalTeams"];
+                        break;
+                    }
+                }
+                return selectedTeams;
+            }
+
             return {
                 getItems: getItems,
                 distributeTeamsByCountries: distributeTeamsByCountries,
                 distributeMatchesByChampionships: distributeMatchesByChampionships,
-                precessChampionshipsData: precessChampionshipsData
+                precessChampionshipsData: precessChampionshipsData,
+                getTeamsByCountry: getTeamsByCountry
             };
     }]);
