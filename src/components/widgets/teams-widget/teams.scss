@@ -1,30 +1,31 @@
-$team-square-margin: 20px;
+$team-square-margin-bottom: 80px;
 $team-square-padding: 10px;
 $team-square-width: 400px;
 $team-square-height: 400px;
-$team-square-background: #f0f0f0;
-$team-square-border: 2px solid black;
-$team-square-border-radius: 4px;
 $select-width: 100px;
 $input-width: 250px;
 $team-container-padding: 4px;
 $team-container-margin: 4px;
-$team-container-background: #c0c0c0;
-$team-container-border-radius: 4px;
 $teams-container-max-height: 350px;
 $team-emblem-width: 30px;
 $team-emblem-height: 30px;
 $team-emblem-border-radius: 2px;
 $team-emblem-right-margin: 4px;
+$hr-border: 0;
+$hr-background: #000000;
+$hr-height: 1px;
 
 .team-square{
-    margin: $team-square-margin;
+    margin-bottom: $team-square-margin-bottom;
     padding: $team-square-padding;
   	width: $team-square-width;
   	height: $team-square-height;
-    background-color: $team-square-background;
-    border: $team-square-border;
-    border-radius: $team-square-border-radius;
+
+  	hr {
+	  border: $hr-border;
+	  background-color: $hr-background;
+	  height: $hr-height;
+	}
 
     .custom-form-control {
 	  	display: inline;
@@ -45,8 +46,6 @@ $team-emblem-right-margin: 4px;
 	  .team-container {
 		padding: $team-container-padding;
 		margin: $team-container-margin;
-		background-color: $team-container-background;
-		border-radius: $team-container-border-radius;
 
 		.team-emblem {
 		  width: $team-emblem-width;

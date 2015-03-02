@@ -1,11 +1,14 @@
 <h1>{{dashboardTitle}}</h1>
-<div ng-class="{'dashboard-container': selectedChampionship.matches.length > 7}">
-    <select class="form-control championship-select"
-            ng-show="championships.length > 1"
-            ng-model="selectedChampionship"
-            ng-options="championship.title for championship in championships"></select>
-    <last-matches title="selectedChampionship.title"
-                  image-url="selectedChampionship.imageUrl"
-                  matches="selectedChampionship.matches"></last-matches>
-    <teams-square teams="teams" style="display: inline"></teams-square>
+<div ng-class="{'dashboard-container': selectedChampionship.matches.length > 5}">
+    <div>
+        <select class="form-control championship-select"
+                ng-show="championships.length > 1"
+                ng-model="selectedChampionship"
+                ng-options="championship.title for championship in championships"
+                ng-change="getTeamsBySelectedChampionship()"></select>
+        <last-matches title="selectedChampionship.title"
+                      image-url="selectedChampionship.imageUrl"
+                      matches="selectedChampionship.matches"></last-matches>
+    </div>
+    <teams-square teams="teams"></teams-square>
 </div>

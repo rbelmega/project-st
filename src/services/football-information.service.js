@@ -40,12 +40,14 @@ angular.module("services").
             }
 
             function distributeMatchesByChampionships(matches) {
-                var championshipImages = [];
+                var championshipTitles = [];
                 var championships = [];
                 matches.forEach(function(match) {
-                   if (championshipImages.indexOf(match.title) === -1) {
-                       championshipImages.push(match.title);
-                       championships.push({image: match.image, title: match.title, matches: []});
+                   if (championshipTitles.indexOf(match.title) === -1) {
+                       championshipTitles.push(match.title);
+                       championships.push({image: match.image,
+                           title: match.title,
+                           matches: []});
                    }
                 });
                 matches.forEach(function(match) {
@@ -71,8 +73,21 @@ angular.module("services").
             }
 
             function getTeamsByCountry(teams, selectedChampionship) {
+                var teamFromChampionshipName = selectedChampionship["matches"][0]["firstTeam"];
                 for (var i = 0; i < teams.length; i++) {
-                    if (teams[i]["id_championship"] === selectedChampionship["id_championship"]) {
+                    for (var j = 0; j < teams[i]["nationalTeams"].length; j++) {
+                        if (teams[i]["nationalTeams"][j]["name"] === teamFromChampionshipName) {
+                            var selectedTeams = teams[i]["nationalTeams"];
+                            break;
+                        }
+                    }
+                }
+                return selectedTeams;
+            }
+
+            function getTeamsByChampionship(teams, championship) {
+                for (var i = 0; i < teams.length; i++) {
+                    if (teams[i]["id"] === championship["id_championship"]) {
                         var selectedTeams = teams[i]["nationalTeams"];
                         break;
                     }
@@ -85,6 +100,7 @@ angular.module("services").
                 distributeTeamsByCountries: distributeTeamsByCountries,
                 distributeMatchesByChampionships: distributeMatchesByChampionships,
                 precessChampionshipsData: precessChampionshipsData,
-                getTeamsByCountry: getTeamsByCountry
+                getTeamsByCountry: getTeamsByCountry,
+                getTeamsByChampionship: getTeamsByChampionship
             };
     }]);

@@ -1,6 +1,6 @@
-<div class="championships-container">
+<div class="championships-container" ng-controller="championshipPageCtrl">
     <div class="championship-container" ng-repeat="championship in championships"
-            ng-click="clickHandler()">
+            ng-click="showTeamsFromChampionship(championship)">
         <img class="championship-image" ng-src="{{championship.imageUrl}}">
         <b>{{championship.name}}.{{championship.sename}}</b>
     </div>

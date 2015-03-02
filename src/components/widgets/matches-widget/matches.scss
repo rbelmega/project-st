@@ -1,25 +1,26 @@
 $matches-container-padding-top: 20px;
 $matches-container-margin: 5px;
-$matches-container-background: #f0f0f0;
 $matches-container-width: 500px;
-$matches-container-border: 2px solid black;
-$matches-container-border-radius: 4px;
 $match-container-padding: 4px;
 $match-container-margin: 4px;
-$match-container-background: #c0c0c0;
-$match-container-border-radius: 4px;
 $match-team-container-width: 222px;
 $matches-image-width: 48px;
 $matches-image-height: 48px;
 $matches-title-font-size: 14px;
+$hr-border: 0;
+$hr-background: #000000;
+$hr-height: 1px;
 
 .national-matches-container {
   padding-top: $matches-container-padding-top;
   margin: $matches-container-margin;
-  background: $matches-container-background;
   width: $matches-container-width;
-  border: $matches-container-border;
-  border-radius: $matches-container-border-radius;
+
+  hr {
+    border: $hr-border;
+    background-color: $hr-background;
+    height: $hr-height;
+  }
 
   .matches-title {
     font-size: $matches-title-font-size;
@@ -35,8 +36,6 @@ $matches-title-font-size: 14px;
     text-align: center;
     padding: $match-container-padding;
     margin: $match-container-margin;
-    background: $match-container-background;
-    border-radius: $match-container-border-radius;
 
     .match-team-container {
       width: $match-team-container-width;

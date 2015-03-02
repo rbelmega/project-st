@@ -14,20 +14,19 @@ $championship-image-border-radius: 5px;
 .championships-container {
   width: $championships-container-width;
   margin: $championships-container-margin;
-  background: $championships-container-background;
-  border: $championships-container-border;
-  border-radius: $championships-container-border-radius;
 
   .championship-container {
     margin: $championship-container-margin;
     padding: $championship-container-padding;
-    background: $championship-container-background;
-    border-radius: $championship-container-border-radius;
 
     .championship-image {
       width: $championship-image-width;
       height: $championship-image-height;
       border-radius: $championship-image-border-radius;
     }
+  }
+
+  .championship-container:hover {
+    cursor: pointer;
   }
 }
