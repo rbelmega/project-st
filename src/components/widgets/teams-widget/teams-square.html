@@ -8,7 +8,10 @@
         <option value="name">NAME</option>
         <option value="city">CITY</option>
     </select>
-    <input class="form-control custom-input custom-form-control" type="text" ng-model="teamModel[searchProperty]">
+    <input class="form-control custom-input custom-form-control"
+           placeholder="search"
+           type="text" ng-model="teamModel[searchProperty]">
+    <hr>
     <div class="teams-container">
         <div class="team-container" ng-repeat="team in teams | orderBy: predicate | filter: teamModel[searchProperty]">
             <img class="team-emblem" ng-src="{{team.imageUrl}}">
