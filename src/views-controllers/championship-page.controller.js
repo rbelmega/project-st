@@ -3,8 +3,8 @@ angular.module("views")
         function($scope, UrlsProvider, FootballInformationService) {
             $scope.championshipTitle = "Championship";
 
-            $scope.clickHandler = function() {
-                $window.alert("click");
+            $scope.showTeamsFromChampionship = function() {
+                alert("click");
             }
 
             FootballInformationService.getItems(UrlsProvider.championships)

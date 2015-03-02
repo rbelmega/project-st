@@ -1,6 +1,8 @@
 $championship-select-width: 300px;
+$championship-select-margin: 10px;
 
 .championship-select {
+  margin: $championship-select-margin;
   width: $championship-select-width;
 }
 

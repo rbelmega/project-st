@@ -7,7 +7,7 @@ angular.module("views")
 
             $scope.getTeamsBySelectedChampionship = function () {
                 $scope.teams = FootballInformationService.getTeamsByCountry(allTeams, $scope.selectedChampionship);
-            }
+            };
 
             FootballInformationService.getItems(UrlsProvider.matches)
                 .then(function(matches) {

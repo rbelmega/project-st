@@ -30,4 +30,8 @@ $championship-image-border-radius: 5px;
       border-radius: $championship-image-border-radius;
     }
   }
+
+  .championship-container:hover {
+    cursor: pointer;
+  }
 }
