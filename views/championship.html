@@ -1,0 +1,9 @@
+<div class="dashboard-container">
+    <div>
+        <h1>{{championshipTitle}}</h1>
+        <championships-list championships="championships"></championships-list>
+    </div>
+    <div class="championship-teams-container">
+        <teams-square ng-show="selectedChampionship" teams="teams"></teams-square>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+.championships-container {
+  width: 300px;
+  margin: 5px; }
+  .championships-container .championship-container {
+    margin: 4px;
+    padding: 4px; }
+    .championships-container .championship-container .championship-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px; }
+  .championships-container .championship-container:hover {
+    cursor: pointer; }
+
+.national-matches-container {
+  padding-top: 20px;
+  margin: 5px;
+  width: 500px; }
+  .national-matches-container hr {
+    border: 0;
+    background-color: #000000;
+    height: 1px; }
+  .national-matches-container .matches-title {
+    font-size: 14px;
+    display: inline; }
+  .national-matches-container .matches-image {
+    width: 48px;
+    height: 48px; }
+  .national-matches-container .match-container {
+    text-align: center;
+    padding: 4px;
+    margin: 4px; }
+    .national-matches-container .match-container .match-team-container {
+      width: 222px;
+      display: inline-block; }
+    .national-matches-container .match-container .first-match-team {
+      text-align: end; }
+    .national-matches-container .match-container .second-match-team {
+      text-align: start; }
+  .national-matches-container h6 {
+    margin: 0px; }
+
+.team-square {
+  margin-bottom: 80px;
+  padding: 10px;
+  width: 400px;
+  height: 400px; }
+  .team-square hr {
+    border: 0;
+    background-color: #000000;
+    height: 1px; }
+  .team-square .custom-form-control {
+    display: inline; }
+  .team-square .custom-select {
+    width: 100px; }
+  .team-square .custom-input {
+    width: 250px; }
+  .team-square .teams-container {
+    max-height: 350px;
+    overflow-y: auto; }
+    .team-square .teams-container .team-container {
+      padding: 4px;
+      margin: 4px; }
+      .team-square .teams-container .team-container .team-emblem {
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+        border-radius: 2px; }

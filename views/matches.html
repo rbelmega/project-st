@@ -1,0 +1,6 @@
+<h1>{{matchesTitle}}</h1>
+<div ng-repeat="championship in championships">
+    <last-matches title="championship.title"
+                  image-url="championship.imageUrl"
+                  matches="championship.matches"></last-matches>
+</div>

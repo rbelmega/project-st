@@ -1,0 +1,9 @@
+.championship-teams-container {
+  margin-top: 48px; }
+
+.championship-select {
+  margin: 10px;
+  width: 300px; }
+
+.dashboard-container {
+  display: flex; }
